@@ -1,0 +1,29 @@
+{$= "text/html" @setMimeType $}
+<html>
+<head>
+<style>
+table{
+font-family: arial, sans-serif;
+border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+<title>Calc</title>
+</head>
+<body>
+<h1>Zbrajanje</h1>
+<table>
+<tbody>
+<tr><td>a</td><td>{$= "varA" "0" @tparamGet $}</td></tr>
+<tr><td>b</td><td>{$= "varB" "0" @tparamGet $}</td></tr>
+<tr><td>a+b</td><td>{$= "zbroj" "0" @tparamGet $}</td></tr>
+</tbody>
+</table>
+<hr>
+<img src="images/{$= "imgName" "404.jpg" @tparamGet $}" alt="Secret image" width="100%">
+</body>
+</html>
